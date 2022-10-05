@@ -8,7 +8,10 @@ import './sliderDetail.style.scss';
 export const SliderDetail = (props) => {
   //console.log(props)
 
-  const { unit, marks, defaultValue, step } = props;
+  const { unit, marks, defaultValue, step, min, max } = props;
+
+
+
 
   return (
     <Slider
@@ -23,7 +26,9 @@ export const SliderDetail = (props) => {
       aria-label="Always visible"
       defaultValue={defaultValue}
       valueLabelFormat={value => `${value} ${unit}`}
-      step={step}
+      // step={step}
+      min={min}
+      max={max}
       marks={marks}
       valueLabelDisplay="on"
     />
