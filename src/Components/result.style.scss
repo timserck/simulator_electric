@@ -1,0 +1,27 @@
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 149px;
+    text-align: center;
+    &-value {
+        position: relative;
+        font-size: 35px;
+        font-family: "peugeot_newbold",
+    }
+    &-symbol {
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        transform: translate(100%, -50%);
+        font-size: 12px;
+        font-family: 'peugeot_newregular'
+    }
+    &-info {
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: 'peugeot_newregular'
+    }
+}

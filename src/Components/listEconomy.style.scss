@@ -1,0 +1,17 @@
+.economyList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-li {
+        width: 33.33%;
+        &:nth-child(1) {
+            background: #00A3E0;
+        }
+        &:nth-child(2) {
+            background: #00A3E0A6;
+        }
+        &:nth-child(3) {
+            background: #00A3E073;
+        }
+    }
+}

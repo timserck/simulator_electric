@@ -1,0 +1,31 @@
+.fieldset {
+    border-bottom: 1px solid #ECECEF;
+    margin-bottom: 17px;
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    &-title {
+        padding-bottom: 18px;
+    }
+    &-group {
+        padding-bottom: 17px;
+    }
+    &-groupData {
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 57px;
+    }
+    &-label {
+        display: inline-block;
+        color: #787B80;
+        min-width: 172px;
+    }
+    &-info {
+        padding-top: 27px;
+        display: inline-block;
+        color: #787B80;
+    }
+}

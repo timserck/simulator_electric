@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 93px;
+    }
+    height: 110px;
+    background: black;
+    color: white;
+    &-title {
+        text-align: center;
+    }
+    &-brand {
+        margin-right: 172px;
+    }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,15 @@
+.selected {
+    &-img {
+        object-fit: cover;
+        width: 100%;
+    }
+    &-details {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    &-name {}
+    &-km {
+        color: #787B80;
+    }
+}
