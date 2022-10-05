@@ -1,16 +1,16 @@
 import './result.style.scss';
 
-export const Result = () => {
+export const Result = (props) => {
+
+  const {value, symbol, txt} = props;
   return (
     <div className='result'>
       <span className="result-value">
-        118
-        <div className="result-symbol">€</div>
-
+        {value}
+        <div className="result-symbol">{symbol}</div>
       </span>
-
       <p className="result-info">
-          D'économie sur 1 mois
+          {txt}
         </p>
     </div>
   );
