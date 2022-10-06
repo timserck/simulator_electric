@@ -1,17 +1,25 @@
-import * as React from 'react';
+import React, { useContext } from "react";
 import Slider from '@mui/material/Slider';
 import './sliderDetail.style.scss';
 
-
-
+import modelsContext from '../Auth/models-context';
 
 export const SliderDetail = (props) => {
   //console.log(props)
+  const context = useContext(modelsContext)
+  const {currentValues} = context;
+  const { unit, marks, defaultValue, step, min, max, idFieldset } = props;
+  const [value, setValue] = React.useState(defaultValue);
+ 
 
-  const { unit, marks, defaultValue, step, min, max } = props;
 
-
-
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+    let newValues = currentValues
+    // console.log(values, "values")
+    newValues[idFieldset] = newValue
+    context.onChangeSlider(newValues)
+  };
 
   return (
     <Slider
@@ -30,6 +38,8 @@ export const SliderDetail = (props) => {
       min={min}
       max={max}
       marks={marks}
+      value={value} 
+      onChange={handleChange}
       valueLabelDisplay="on"
     />
   );

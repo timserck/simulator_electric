@@ -1,8 +1,17 @@
 import './result.style.scss';
+import React, { useContext, useEffect } from "react";
+import modelsContext from '../Auth/models-context';
 
 export const Result = (props) => {
 
+
+
+  const context = useContext(modelsContext)
+  const {currentValues} = context;
+
+
   const {value, symbol, txt} = props;
+
   return (
     <div className='result'>
       <span className="result-value">
@@ -12,6 +21,7 @@ export const Result = (props) => {
       <p className="result-info">
           {txt}
         </p>
+        
     </div>
   );
 }

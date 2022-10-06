@@ -1,18 +1,43 @@
 import './App.scss';
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Models, Details, Header } from "./Components";
 import { Grid } from '@mui/material';
 import ModelsContext from "./Auth/models-context";
 
+
+
 function App() {
 
+  const context = useContext(ModelsContext);
+  const {models} = context;
   const [currentModel, setCurrentModel] = useState("e-208");
+  const [currentValues, setCurrentValues] = useState(getDefaultValues);
+
+  function getDefaultValues() {
+    return models
+    .filter(model => model.name === currentModel)[0].fieldsets
+    .map(fieldset => fieldset.sliders)
+    .map(item =>  item.map(item => item.data.defaultValue))
+    .reduce((a, b) => a.concat(b), [])
+  }
+
   const onChangeModel = (value) => {
     setCurrentModel(value);
+    setCurrentValues(getDefaultValues);
+  };
+
+  const onChangeSlider = (value) => {
+    console.log(value, "onChangeSlider", context.currentValues, currentValues)
+    setCurrentValues(value);
   };
 
   return (
-    <ModelsContext.Provider value={{ currentModel: currentModel, onChangeModel: onChangeModel,  models: [{
+    <ModelsContext.Provider value={{ currentModel: currentModel, onChangeModel: onChangeModel,  
+     
+      onChangeSlider: onChangeSlider,
+      currentValues : currentValues,
+      models: [
+        {
       name: "e-208",
       img: "/imgs/models/recadrer/e-208_2.jpg",
        fieldsets : [{
@@ -343,7 +368,27 @@ function App() {
 
   }
 
-] }}>
+],
+results : [{
+  value : 118,
+  symbol: "€",
+  txt : "D'économie sur 1 mois"
+
+},
+{
+  value : 118,
+  symbol: "€",
+  txt : "D'économie sur 1 mois"
+
+},
+{
+  value : 118,
+  symbol: "€",
+  txt : "D'économie sur 1 mois"
+
+}],
+
+}}>
 
       <main className="App container">
         <Header />

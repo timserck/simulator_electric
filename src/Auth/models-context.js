@@ -3,6 +3,7 @@ import React from 'react';
 // Creating the context object and passing the default values.
 const modelsContext = React.createContext({
         currentModel: "e-208",
+        currentValues : [0, 0, 0, 0],
         models: [{
                 name: "e-208",
                 img: "/imgs/models/recadrer/e-208_2.jpg",
@@ -308,8 +309,27 @@ const modelsContext = React.createContext({
             }
 
         ],
+        results : [{
+            value : 118,
+            symbol: "€",
+            txt : "D'économie sur 1 mois"
+          
+          },
+          {
+            value : 118,
+            symbol: "€",
+            txt : "D'économie sur 1 mois"
+          
+          },
+          {
+            value : 118,
+            symbol: "€",
+            txt : "D'économie sur 1 mois"
+          
+          }],
 
-        onChangeValue: () => {},
+
+        onChangeSlider: () => {},
         onChangeModel: () => {}
     }
 

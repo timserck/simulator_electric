@@ -1,27 +1,13 @@
 import './listEconomy.style.scss';
 
 import { Result } from "../Components";
+import React, { useContext } from "react";
+import modelsContext from '../Auth/models-context';
 
 export const ListEconomy = () => {
+  const context = useContext(modelsContext)
+  const {results} = context;
 
-  const results = [{
-    value : 118,
-    symbol: "€",
-    txt : "D'économie sur 1 mois"
-
-  },
-  {
-    value : 118,
-    symbol: "€",
-    txt : "D'économie sur 1 mois"
-
-  },
-  {
-    value : 118,
-    symbol: "€",
-    txt : "D'économie sur 1 mois"
-
-  }]
   return (
     <ul className='economyList'>
       {
@@ -33,8 +19,6 @@ export const ListEconomy = () => {
           )
         })
       }
-
-
     </ul>
 
   );
