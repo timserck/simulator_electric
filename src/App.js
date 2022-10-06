@@ -4,8 +4,6 @@ import { Models, Details, Header } from "./Components";
 import { Grid } from '@mui/material';
 import ModelsContext from "./Auth/models-context";
 
-
-
 function App() {
 
   const context = useContext(ModelsContext);
@@ -27,15 +25,17 @@ function App() {
   };
 
   const onChangeSlider = (value) => {
-    console.log(value, "onChangeSlider", context.currentValues, currentValues)
-    setCurrentValues(value);
+    setCurrentValues(Array.from(value));
   };
 
   return (
-    <ModelsContext.Provider value={{ currentModel: currentModel, onChangeModel: onChangeModel,  
-     
-      onChangeSlider: onChangeSlider,
+    <ModelsContext.Provider value={{ 
+      currentModel: currentModel, 
+      onChangeModel: onChangeModel,  
+
       currentValues : currentValues,
+      onChangeSlider: onChangeSlider,
+
       models: [
         {
       name: "e-208",

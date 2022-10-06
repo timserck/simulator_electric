@@ -21,6 +21,9 @@ export const Result = (props) => {
       <p className="result-info">
           {txt}
         </p>
+        <p>
+          {currentValues}
+        </p>
         
     </div>
   );

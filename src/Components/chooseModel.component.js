@@ -11,7 +11,6 @@ export const ChooseModel = (props) => {
 
     const handleChangeModel = () => {
         context.onChangeModel(name)
-        console.log(context, "ehere")
     }
 
 
