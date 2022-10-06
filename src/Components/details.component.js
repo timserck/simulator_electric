@@ -20,7 +20,7 @@ export const Details = () => {
       <form action="" className="details">
         {
           getCurrentModel(currentModel).fieldsets.map((data, index) => {
-            return <FieldsetDetail key={index} value={[index]} {...data} />
+            return <FieldsetDetail key={index} position={index} {...data} />
           })
         }
       </form>
