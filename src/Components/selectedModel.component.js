@@ -11,7 +11,6 @@ export const SelectedModel = () => {
   const {currentModel, models} = context
 
   const getCurrentImg = (currentModel) => {
-    console.log(models.filter(item => item.name === currentModel)[0].img, "img")
    return (models.filter(item => item.name === currentModel)[0].img).toString()
   }
   

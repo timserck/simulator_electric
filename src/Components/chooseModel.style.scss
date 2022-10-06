@@ -7,7 +7,7 @@
     height: 174px;
     border: 6px solid #ECECEF;
     padding-bottom: 40px;
-    &:hover {
+    &-active,&:hover {
         border: 6px solid #00A3E0;
     }
     &-img {

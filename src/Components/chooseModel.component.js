@@ -8,15 +8,19 @@ export const ChooseModel = (props) => {
     
     const context = useContext(modelsContext)
     const {name, img} = props;
+    const {currentModel} = context;
+
+
 
     const handleChangeModel = () => {
         context.onChangeModel(name)
+
     }
 
 
     return (
         <button onClick={handleChangeModel}>
-            <div className='choose'>
+            <div className={`choose ${name === currentModel ? "choose-active"  : ""}`}>
                 <img src={img} className='choose-img' alt="choose img" />
                <Typography variant='body1' component={"p"} className="choose-title">
                {name}

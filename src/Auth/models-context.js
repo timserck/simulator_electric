@@ -5,7 +5,19 @@ const modelsContext = React.createContext({
         currentModel: "e-208",
         currentValues : [0, 0, 0, 0],
         models: [{
+
                 name: "e-208",
+                WLTP_Range : 400,
+                UBE: 48.1,
+                WLTP_consumption: 14.1,
+                ICE_consumption: 5.5,
+                BEV_annualCost: 318,
+                ICE_annualCost: 1.485,
+                ECO_4ans: 4.667,
+                ECO_1ans: 1.167,
+                ECO_1mois: 97,
+
+                
                 img: "/imgs/models/recadrer/e-208_2.jpg",
                 fieldsets: [{
                         title: "aVOS DÉPLACEMENTS",
@@ -102,11 +114,23 @@ const modelsContext = React.createContext({
                             info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
                         }, ],
                     },
-                ]
+                ],
+
+
 
             },
             {
                 name: "e-2008",
+                WLTP_Range : 400,
+                UBE: 51.0,
+                WLTP_consumption: 15,
+                ICE_consumption: 6.1,
+                BEV_annualCost: 338,
+                ICE_annualCost: 1.647,
+                ECO_4ans: 5.238,
+                ECO_1ans: 1.310,
+                ECO_1mois: 109,
+
                 img: "/imgs/models/recadrer/e-2008_2.jpg",
                 fieldsets: [{
                         title: "bVOS DÉPLACEMENTS",
@@ -208,6 +232,17 @@ const modelsContext = React.createContext({
             },
             {
                 name: "e-308",
+
+                WLTP_Range : 400,
+                UBE: 51.0,
+                WLTP_consumption: 15,
+                ICE_consumption: 6,
+                BEV_annualCost: 338,
+                ICE_annualCost: 1.620,
+                ECO_4ans: 5.130,
+                ECO_1ans: 1.283,
+                ECO_1mois: 107,
+
                 img: "/imgs/models/recadrer/e-308_2.jpg",
                 fieldsets: [{
                         title: "cVOS DÉPLACEMENTS",
@@ -312,19 +347,19 @@ const modelsContext = React.createContext({
         results : [{
             value : 118,
             symbol: "€",
-            txt : "D'économie sur 1 mois"
+            txt : "Sur 1 mois"
           
           },
           {
             value : 118,
             symbol: "€",
-            txt : "D'économie sur 1 mois"
+            txt : "Sur 1 an"
           
           },
           {
             value : 118,
             symbol: "€",
-            txt : "D'économie sur 1 mois"
+            txt : "Sur 4 ans"
           
           }],
 

@@ -14,7 +14,7 @@ export const ListEconomy = () => {
         results.map((result, index) => {
           return(
             <li key={index} className='economyList-li'>
-            <Result {...result} />
+            <Result  {...result} />
           </li>
           )
         })
