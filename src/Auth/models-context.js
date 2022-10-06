@@ -3,11 +3,11 @@ import React from 'react';
 // Creating the context object and passing the default values.
 const modelsContext = React.createContext({
         currentModel: "e-208",
-        currentValues : [0, 0, 0, 0],
+        currentValues: [0, 0, 0, 0],
         models: [{
 
                 name: "e-208",
-                WLTP_Range : 400,
+                WLTP_Range: 400,
                 UBE: 48.1,
                 WLTP_consumption: 14.1,
                 ICE_consumption: 5.5,
@@ -17,7 +17,7 @@ const modelsContext = React.createContext({
                 ECO_1ans: 1.167,
                 ECO_1mois: 97,
 
-                
+
                 img: "/imgs/models/recadrer/e-208_2.jpg",
                 fieldsets: [{
                         title: "aVOS DÉPLACEMENTS",
@@ -97,16 +97,16 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 0.10,
+                                defaultValue: 1,
                                 step: 10,
-                                min: 0.1,
-                                max: 0.4,
+                                min: 1,
+                                max: 4,
                                 marks: [{
-                                        value: 0.10,
+                                        value: 1,
                                         label: '0,10 €/kWh',
                                     },
                                     {
-                                        value: 0.40,
+                                        value: 4,
                                         label: '0,40 €/kWh',
                                     },
                                 ]
@@ -121,7 +121,7 @@ const modelsContext = React.createContext({
             },
             {
                 name: "e-2008",
-                WLTP_Range : 400,
+                WLTP_Range: 400,
                 UBE: 51.0,
                 WLTP_consumption: 15,
                 ICE_consumption: 6.1,
@@ -210,16 +210,16 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 0.10,
+                                defaultValue: 1,
                                 step: 10,
-                                min: 0.1,
-                                max: 0.4,
+                                min: 1,
+                                max: 4,
                                 marks: [{
-                                        value: 0.10,
+                                        value: 1,
                                         label: '0,10 €/kWh',
                                     },
                                     {
-                                        value: 0.40,
+                                        value: 4,
                                         label: '0,40 €/kWh',
                                     },
                                 ]
@@ -233,7 +233,7 @@ const modelsContext = React.createContext({
             {
                 name: "e-308",
 
-                WLTP_Range : 400,
+                WLTP_Range: 400,
                 UBE: 51.0,
                 WLTP_consumption: 15,
                 ICE_consumption: 6,
@@ -322,16 +322,16 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 0.10,
+                                defaultValue: 1,
                                 step: 10,
-                                min: 0.1,
-                                max: 0.4,
+                                min: 1,
+                                max: 4,
                                 marks: [{
-                                        value: 0.10,
+                                        value: 1,
                                         label: '0,10 €/kWh',
                                     },
                                     {
-                                        value: 0.40,
+                                        value: 4,
                                         label: '0,40 €/kWh',
                                     },
                                 ]
@@ -344,24 +344,25 @@ const modelsContext = React.createContext({
             }
 
         ],
-        results : [{
-            value : 118,
-            symbol: "€",
-            txt : "Sur 1 mois"
-          
-          },
-          {
-            value : 118,
-            symbol: "€",
-            txt : "Sur 1 an"
-          
-          },
-          {
-            value : 118,
-            symbol: "€",
-            txt : "Sur 4 ans"
-          
-          }],
+        results: [{
+                value: 118,
+                symbol: "€",
+                txt: "Sur 1 mois"
+
+            },
+            {
+                value: 118,
+                symbol: "€",
+                txt: "Sur 1 an"
+
+            },
+            {
+                value: 118,
+                symbol: "€",
+                txt: "Sur 4 ans"
+
+            }
+        ],
 
 
         onChangeSlider: () => {},

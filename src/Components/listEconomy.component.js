@@ -17,11 +17,13 @@ export const ListEconomy = () => {
     elec  : currentValues[3],
   }
 
+  console.log(slidesValues, "slidesValues")
+
   const getCurrentModel = () => {
     return models.filter(model => model.name === currentModel)[0]
    }
 
-  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100)  * slidesValues.carbu) - ( slidesValues.km * getCurrentModel().WLTP_consumption / 100 * slidesValues.elec)
+  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100)  * slidesValues.carbu) - ( slidesValues.km * getCurrentModel().WLTP_consumption / 100 * (slidesValues.elec / 10) )
 
   const setValue = (index) => {
 
