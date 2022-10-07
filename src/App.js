@@ -402,7 +402,7 @@ function App() {
   },
 
 
-],
+].filter(model => model.name !== "e-308"),
 results : [{
   value : 118,
   symbol: "€",

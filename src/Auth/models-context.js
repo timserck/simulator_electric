@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 // Creating the context object and passing the default values.
 const modelsContext = React.createContext({
         currentModel: "e-208",
@@ -347,7 +349,7 @@ const modelsContext = React.createContext({
             },
 
 
-        ],
+        ].filter(model => model.name !== "e-308"),
         results: [{
                 value: 118,
                 symbol: "€",
