@@ -14,7 +14,7 @@ export const Result = (props) => {
   return (
     <div className='result'>
       <span className="result-value">
-    {valueResult}
+    {valueResult.toLocaleString().replace(",", " ")}
         <div className="result-symbol">{symbol}</div>
       </span>
       <p className="result-info">

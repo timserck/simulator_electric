@@ -37,7 +37,7 @@ export const SliderDetail = (props) => {
       }}
       aria-label="Always visible"
       defaultValue={defaultValue}
-      valueLabelFormat={value => `${idFieldset === 3 ? "0," : ""}${value}${idFieldset === 3 ? "0" : ""} ${unit}`}
+      valueLabelFormat={value => `${value} ${unit}`}
       step={step}
       min={min}
       max={max}

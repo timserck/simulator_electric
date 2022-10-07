@@ -136,17 +136,17 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1.5,
-              step: 1,
-              min: 1,
-              max: 4,
+              defaultValue: 0.15,
+              step: 0.01,
+              min: 0.1,
+              max: 0.4,
               marks : [
                 {
-                  value: 1,
+                  value: 0.1,
                   label: '0,10 €/kWh',
                 },
                 {
-                  value: 4,
+                  value: 0.4,
                   label: '0,40 €/kWh',
                 },
               ]
@@ -257,17 +257,17 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1.5,
-              step: 1,
-              min: 1,
-              max: 4,
+              defaultValue: 0.15,
+              step: 0.01,
+              min: 0.1,
+              max: 0.4,
               marks : [
                 {
-                  value: 1,
+                  value: 0.1,
                   label: '0,10 €/kWh',
                 },
                 {
-                  value: 4,
+                  value: 0.4,
                   label: '0,40 €/kWh',
                 },
               ]
@@ -378,17 +378,17 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1.5,
-              step: 1,
-              min: 1,
-              max: 4,
+              defaultValue: 0.15,
+              step: 0.01,
+              min: 0.1,
+              max: 0.4,
               marks : [
                 {
-                  value: 1,
+                  value: 0.1,
                   label: '0,10 €/kWh',
                 },
                 {
-                  value: 4,
+                  value: 0.4,
                   label: '0,40 €/kWh',
                 },
               ]
