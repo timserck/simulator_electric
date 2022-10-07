@@ -52,7 +52,7 @@ function App() {
       
       img: "imgs/models/recadrer/e-208_2.jpg",
        fieldsets : [{
-        title: "aVOS DÉPLACEMENTS",
+        title: "VOS DÉPLACEMENTS",
         sliders: [
           {
             label: "Kilométrage annuel :",
@@ -173,7 +173,7 @@ function App() {
 
       img: "imgs/models/recadrer/e-2008_2.jpg",
       fieldsets : [{
-        title: "bVOS DÉPLACEMENTS",
+        title: "VOS DÉPLACEMENTS",
         sliders: [
           {
             label: "Kilométrage annuel :",
@@ -294,7 +294,7 @@ function App() {
 
       img: "imgs/models/recadrer/e-308_2.jpg",
       fieldsets : [{
-        title: "cVOS DÉPLACEMENTS",
+        title: "VOS DÉPLACEMENTS",
         sliders: [
           {
             label: "Kilométrage annuel :",

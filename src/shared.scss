@@ -4,7 +4,7 @@
 @use 'styles/_vars.scss';
 @use 'styles/_colors.scss';
 @use 'styles/_mixins.scss';
-@use 'fonts/stylesheet.css';
+@import 'fonts/stylesheet.css';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
