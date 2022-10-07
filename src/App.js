@@ -87,7 +87,7 @@ function App() {
             data:{
               unit: "l/100 km",
               defaultValue: 5.5,
-              step: 10,
+              step: 0.5,
               min: 3,
               max: 10,
               marks : [
@@ -108,7 +108,7 @@ function App() {
             data:{
               unit: "€/l",
               defaultValue: 1.8,
-              step: 10,
+              step: 0.05,
               min: 1,
               max: 3,
               marks : [
@@ -137,7 +137,7 @@ function App() {
             data:{
               unit: "€/kWh",
               defaultValue: 1.5,
-              step: 10,
+              step: 1,
               min: 1,
               max: 4,
               marks : [
@@ -159,17 +159,17 @@ function App() {
 
   },
   {
-      name: "e-2008",
+    name: "e-2008",
 
       WLTP_Range : 400,
       UBE: 51.0,
       WLTP_consumption: 15,
-      ICE_consumption: 6.1,
+      ICE_consumption: 6,
       BEV_annualCost: 338,
-      ICE_annualCost: 1.647,
-      ECO_4ans: 5.238,
-      ECO_1ans: 1.310,
-      ECO_1mois: 109,
+      ICE_annualCost: 1.620,
+      ECO_4ans: 5.130,
+      ECO_1ans: 1.283,
+      ECO_1mois: 107,
 
       img: "imgs/models/recadrer/e-2008_2.jpg",
       fieldsets : [{
@@ -207,8 +207,8 @@ function App() {
             label: "Consommation de carburant :",
             data:{
               unit: "l/100 km",
-              defaultValue: 6.1,
-              step: 10,
+              defaultValue: 6,
+              step: 0.5,
               min: 3,
               max: 10,
               marks : [
@@ -229,7 +229,7 @@ function App() {
             data:{
               unit: "€/l",
               defaultValue: 1.8,
-              step: 10,
+              step: 0.05,
               min: 1,
               max: 3,
               marks : [
@@ -258,7 +258,7 @@ function App() {
             data:{
               unit: "€/kWh",
               defaultValue: 1.5,
-              step: 10,
+              step: 1,
               min: 1,
               max: 4,
               marks : [
@@ -280,17 +280,17 @@ function App() {
 
   },
   {
-      name: "e-308",
 
+      name: "e-308",
       WLTP_Range : 400,
       UBE: 51.0,
       WLTP_consumption: 15,
-      ICE_consumption: 6,
+      ICE_consumption: 6.1,
       BEV_annualCost: 338,
-      ICE_annualCost: 1.620,
-      ECO_4ans: 5.130,
-      ECO_1ans: 1.283,
-      ECO_1mois: 107,
+      ICE_annualCost: 1.647,
+      ECO_4ans: 5.238,
+      ECO_1ans: 1.310,
+      ECO_1mois: 109,
 
       img: "imgs/models/recadrer/e-308_2.jpg",
       fieldsets : [{
@@ -328,8 +328,8 @@ function App() {
             label: "Consommation de carburant :",
             data:{
               unit: "l/100 km",
-              defaultValue: 6,
-              step: 10,
+              defaultValue: 6.1,
+              step: 0.5,
               min: 3,
               max: 10,
               marks : [
@@ -350,7 +350,7 @@ function App() {
             data:{
               unit: "€/l",
               defaultValue: 1.8,
-              step: 10,
+              step: 0.05,
               min: 1,
               max: 3,
               marks : [
@@ -379,7 +379,7 @@ function App() {
             data:{
               unit: "€/kWh",
               defaultValue: 1.5,
-              step: 10,
+              step: 1,
               min: 1,
               max: 4,
               marks : [
@@ -399,7 +399,8 @@ function App() {
       },
       ]
 
-  }
+  },
+
 
 ],
 results : [{

@@ -8,7 +8,7 @@ export const SliderDetail = (props) => {
   //console.log(props)
   const context = useContext(modelsContext)
   const {currentValues, currentModel} = context;
-  const { unit, marks, defaultValue, min, max, idFieldset } = props;
+  const { unit, marks, defaultValue, min, max, idFieldset, step } = props;
   const [value, setValue] = React.useState(defaultValue);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export const SliderDetail = (props) => {
       aria-label="Always visible"
       defaultValue={defaultValue}
       valueLabelFormat={value => `${idFieldset === 3 ? "0," : ""}${value}${idFieldset === 3 ? "0" : ""} ${unit}`}
-      // step={step}
+      step={step}
       min={min}
       max={max}
       marks={marks}

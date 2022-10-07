@@ -26,7 +26,7 @@ const modelsContext = React.createContext({
                             data: {
                                 unit: "Km",
                                 defaultValue: 15000,
-                                step: 10,
+                                step: 1000,
                                 min: 5000,
                                 max: 50000,
                                 marks: [{
@@ -51,7 +51,7 @@ const modelsContext = React.createContext({
                                 data: {
                                     unit: "l/100 km",
                                     defaultValue: 5.5,
-                                    step: 10,
+                                    step: 0.5,
                                     min: 3,
                                     max: 10,
                                     marks: [{
@@ -71,7 +71,7 @@ const modelsContext = React.createContext({
                                 data: {
                                     unit: "€/l",
                                     defaultValue: 1.8,
-                                    step: 10,
+                                    step: 0.05,
                                     min: 1,
                                     max: 3,
                                     marks: [{
@@ -98,7 +98,7 @@ const modelsContext = React.createContext({
                             data: {
                                 unit: "€/kWh",
                                 defaultValue: 1.5,
-                                step: 10,
+                                step: 1,
                                 min: 1,
                                 max: 4,
                                 marks: [{
@@ -120,119 +120,8 @@ const modelsContext = React.createContext({
 
             },
             {
+
                 name: "e-2008",
-                WLTP_Range: 400,
-                UBE: 51.0,
-                WLTP_consumption: 15,
-                ICE_consumption: 6.1,
-                BEV_annualCost: 338,
-                ICE_annualCost: 1.647,
-                ECO_4ans: 5.238,
-                ECO_1ans: 1.310,
-                ECO_1mois: 109,
-
-                img: "imgs/models/recadrer/e-2008_2.jpg",
-                fieldsets: [{
-                        title: "VOS DÉPLACEMENTS",
-                        sliders: [{
-                            label: "Kilométrage annuel :",
-                            data: {
-                                unit: "Km",
-                                defaultValue: 15000,
-                                step: 10,
-                                min: 5000,
-                                max: 50000,
-                                marks: [{
-                                        value: 5000,
-                                        label: '5 000 km',
-                                    },
-                                    {
-                                        value: 50000,
-                                        label: '50 000 km',
-                                    },
-                                ]
-                            }
-
-                        }, ],
-
-
-                    },
-                    {
-                        title: "COÛT DE VOTRE VÉHICULE ACTUEL",
-                        sliders: [{
-                                label: "Consommation de carburant :",
-                                data: {
-                                    unit: "l/100 km",
-                                    defaultValue: 6.1,
-                                    step: 10,
-                                    min: 3,
-                                    max: 10,
-                                    marks: [{
-                                            value: 3,
-                                            label: '3,0 l/100 km',
-                                        },
-                                        {
-                                            value: 10,
-                                            label: '10,0 l/100 km',
-                                        },
-                                    ]
-                                }
-
-                            },
-                            {
-                                label: "Coût du carburant :",
-                                data: {
-                                    unit: "€/l",
-                                    defaultValue: 1.8,
-                                    step: 10,
-                                    min: 1,
-                                    max: 3,
-                                    marks: [{
-                                            value: 1,
-                                            label: '1,00 €/l',
-                                        },
-                                        {
-                                            value: 3,
-                                            label: '3,00 €/l',
-                                        },
-                                    ]
-                                }
-
-                            }
-                        ],
-
-
-                    },
-                    {
-                        title: "VOTRE CONTRAT ÉLECTRIQUE",
-
-                        sliders: [{
-                            label: "Coût de l’électricité en kWh* :",
-                            data: {
-                                unit: "€/kWh",
-                                defaultValue: 1.5,
-                                step: 10,
-                                min: 1,
-                                max: 4,
-                                marks: [{
-                                        value: 1,
-                                        label: '0,10 €/kWh',
-                                    },
-                                    {
-                                        value: 4,
-                                        label: '0,40 €/kWh',
-                                    },
-                                ]
-                            },
-                            info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
-                        }, ],
-                    },
-                ]
-
-            },
-            {
-                name: "e-308",
-
                 WLTP_Range: 400,
                 UBE: 51.0,
                 WLTP_consumption: 15,
@@ -243,7 +132,7 @@ const modelsContext = React.createContext({
                 ECO_1ans: 1.283,
                 ECO_1mois: 107,
 
-                img: "imgs/models/recadrer/e-308_2.jpg",
+                img: "imgs/models/recadrer/e-2008_2.jpg",
                 fieldsets: [{
                         title: "VOS DÉPLACEMENTS",
                         sliders: [{
@@ -251,7 +140,7 @@ const modelsContext = React.createContext({
                             data: {
                                 unit: "Km",
                                 defaultValue: 15000,
-                                step: 10,
+                                step: 1000,
                                 min: 5000,
                                 max: 50000,
                                 marks: [{
@@ -276,7 +165,7 @@ const modelsContext = React.createContext({
                                 data: {
                                     unit: "l/100 km",
                                     defaultValue: 6,
-                                    step: 10,
+                                    step: 0.5,
                                     min: 3,
                                     max: 10,
                                     marks: [{
@@ -296,7 +185,7 @@ const modelsContext = React.createContext({
                                 data: {
                                     unit: "€/l",
                                     defaultValue: 1.8,
-                                    step: 10,
+                                    step: 0.05,
                                     min: 1,
                                     max: 3,
                                     marks: [{
@@ -323,7 +212,7 @@ const modelsContext = React.createContext({
                             data: {
                                 unit: "€/kWh",
                                 defaultValue: 1.5,
-                                step: 10,
+                                step: 1,
                                 min: 1,
                                 max: 4,
                                 marks: [{
@@ -341,7 +230,119 @@ const modelsContext = React.createContext({
                     },
                 ]
 
-            }
+            },
+            {
+                name: "e-308",
+                WLTP_Range: 400,
+                UBE: 51.0,
+                WLTP_consumption: 15,
+                ICE_consumption: 6.1,
+                BEV_annualCost: 338,
+                ICE_annualCost: 1.647,
+                ECO_4ans: 5.238,
+                ECO_1ans: 1.310,
+                ECO_1mois: 109,
+
+                img: "imgs/models/recadrer/e-308_2.jpg",
+                fieldsets: [{
+                        title: "VOS DÉPLACEMENTS",
+                        sliders: [{
+                            label: "Kilométrage annuel :",
+                            data: {
+                                unit: "Km",
+                                defaultValue: 15000,
+                                step: 1000,
+                                min: 5000,
+                                max: 50000,
+                                marks: [{
+                                        value: 5000,
+                                        label: '5 000 km',
+                                    },
+                                    {
+                                        value: 50000,
+                                        label: '50 000 km',
+                                    },
+                                ]
+                            }
+
+                        }, ],
+
+
+                    },
+                    {
+                        title: "COÛT DE VOTRE VÉHICULE ACTUEL",
+                        sliders: [{
+                                label: "Consommation de carburant :",
+                                data: {
+                                    unit: "l/100 km",
+                                    defaultValue: 6.1,
+                                    step: 0.5,
+                                    min: 3,
+                                    max: 10,
+                                    marks: [{
+                                            value: 3,
+                                            label: '3,0 l/100 km',
+                                        },
+                                        {
+                                            value: 10,
+                                            label: '10,0 l/100 km',
+                                        },
+                                    ]
+                                }
+
+                            },
+                            {
+                                label: "Coût du carburant :",
+                                data: {
+                                    unit: "€/l",
+                                    defaultValue: 1.8,
+                                    step: 0.05,
+                                    min: 1,
+                                    max: 3,
+                                    marks: [{
+                                            value: 1,
+                                            label: '1,00 €/l',
+                                        },
+                                        {
+                                            value: 3,
+                                            label: '3,00 €/l',
+                                        },
+                                    ]
+                                }
+
+                            }
+                        ],
+
+
+                    },
+                    {
+                        title: "VOTRE CONTRAT ÉLECTRIQUE",
+
+                        sliders: [{
+                            label: "Coût de l’électricité en kWh* :",
+                            data: {
+                                unit: "€/kWh",
+                                defaultValue: 1.5,
+                                step: 1,
+                                min: 1,
+                                max: 4,
+                                marks: [{
+                                        value: 1,
+                                        label: '0,10 €/kWh',
+                                    },
+                                    {
+                                        value: 4,
+                                        label: '0,40 €/kWh',
+                                    },
+                                ]
+                            },
+                            info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
+                        }, ],
+                    },
+                ]
+
+            },
+
 
         ],
         results: [{
