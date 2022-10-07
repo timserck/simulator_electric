@@ -34,6 +34,7 @@ export const SliderDetail = (props) => {
         "rail": "slider-rail",
         "valueLabel": "slider-valueLabel",
         "markLabel": "slider-markLabel",
+        "mark": "slider-mark",
       }}
       aria-label="Always visible"
       defaultValue={defaultValue}

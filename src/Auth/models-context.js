@@ -56,11 +56,11 @@ const modelsContext = React.createContext({
                                     max: 10,
                                     marks: [{
                                             value: 3,
-                                            label: '3,0 l/100 km',
+                                            label: '3.0 l/100 km',
                                         },
                                         {
                                             value: 10,
-                                            label: '10,0 l/100 km',
+                                            label: '10.0 l/100 km',
                                         },
                                     ]
                                 }
@@ -76,11 +76,11 @@ const modelsContext = React.createContext({
                                     max: 3,
                                     marks: [{
                                             value: 1,
-                                            label: '1,00 €/l',
+                                            label: '1.00 €/l',
                                         },
                                         {
                                             value: 3,
-                                            label: '3,00 €/l',
+                                            label: '3.00 €/l',
                                         },
                                     ]
                                 }
@@ -104,15 +104,15 @@ const modelsContext = React.createContext({
                                 marks : [
                                     {
                                       value: 0.1,
-                                      label: '0,10 €/kWh',
+                                      label: '0.10 €/kWh',
                                     },
                                     {
                                       value: 0.4,
-                                      label: '0,40 €/kWh',
+                                      label: '0.40 €/kWh',
                                     },
                                   ]
                             },
-                            info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
+                            info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
                         }, ],
                     },
                 ],
@@ -171,11 +171,11 @@ const modelsContext = React.createContext({
                                     max: 10,
                                     marks: [{
                                             value: 3,
-                                            label: '3,0 l/100 km',
+                                            label: '3.0 l/100 km',
                                         },
                                         {
                                             value: 10,
-                                            label: '10,0 l/100 km',
+                                            label: '10.0 l/100 km',
                                         },
                                     ]
                                 }
@@ -191,11 +191,11 @@ const modelsContext = React.createContext({
                                     max: 3,
                                     marks: [{
                                             value: 1,
-                                            label: '1,00 €/l',
+                                            label: '1.00 €/l',
                                         },
                                         {
                                             value: 3,
-                                            label: '3,00 €/l',
+                                            label: '3.00 €/l',
                                         },
                                     ]
                                 }
@@ -219,15 +219,15 @@ const modelsContext = React.createContext({
                                 marks : [
                                     {
                                       value: 0.1,
-                                      label: '0,10 €/kWh',
+                                      label: '0.10 €/kWh',
                                     },
                                     {
                                       value: 0.4,
-                                      label: '0,40 €/kWh',
+                                      label: '0.40 €/kWh',
                                     },
                                   ]
                             },
-                            info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
+                            info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
                         }, ],
                     },
                 ]
@@ -283,11 +283,11 @@ const modelsContext = React.createContext({
                                     max: 10,
                                     marks: [{
                                             value: 3,
-                                            label: '3,0 l/100 km',
+                                            label: '3.0 l/100 km',
                                         },
                                         {
                                             value: 10,
-                                            label: '10,0 l/100 km',
+                                            label: '10.0 l/100 km',
                                         },
                                     ]
                                 }
@@ -331,11 +331,11 @@ const modelsContext = React.createContext({
                                 marks : [
                                     {
                                       value: 0.1,
-                                      label: '0,10 €/kWh',
+                                      label: '0.10 €/kWh',
                                     },
                                     {
                                       value: 0.4,
-                                      label: '0,40 €/kWh',
+                                      label: '0.40 €/kWh',
                                     },
                                   ]
                             },

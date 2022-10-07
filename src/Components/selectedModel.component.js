@@ -25,7 +25,7 @@ export const SelectedModel = () => {
     
     <div className="selected-details">
     <Typography className="selected-name" variant='h2' component={"span"}>{currentModel}</Typography>
-    <Typography className="selected-km" variant='h5' component={"span"}>&nbsp;– jusqu’à 345km d’autonomie sur cycle WLTP</Typography>
+    <Typography className="selected-km" variant='h5' component={"span"}>&nbsp;– jusqu’à {currentModel === "e-208" ? "345km" : "400km"} d’autonomie sur cycle WLTP</Typography>
     </div>
 
 
