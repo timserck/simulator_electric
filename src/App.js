@@ -1,5 +1,5 @@
 import './App.scss';
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Models, Details, Header } from "./Components";
 import { Grid } from '@mui/material';
 import ModelsContext from "./Auth/models-context";
@@ -27,6 +27,25 @@ function App() {
   const onChangeSlider = (value) => {
     setCurrentValues(Array.from(value));
   };
+
+ 
+  // useEffect(() => {
+  //   let timer;
+  //   window.addEventListener('mouseenter', e => {
+  //     clearTimeout(timer);
+    
+  //   });
+    
+  //   window.addEventListener('mouseleave', e => {
+  //     timer = setTimeout(() => console.log("reset"), 5000);
+  //   });
+  
+
+  //   return () => {
+  //     // window.removeEventListener("mouseenter", handleEnter);
+  //     // window.removeEventListener("mouseleave", handleLeave)
+  //   };
+  // }, []);
 
   return (
     <ModelsContext.Provider value={{ 
