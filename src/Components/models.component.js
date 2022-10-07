@@ -7,6 +7,7 @@ export const Models = () => {
     <div className="models">
      <section className='chooseModels' >
        <Typography className="models-title" variant="h2" component={"h2"}>
+        <span className="models-stepper" >1</span>
        CHOISISSEZ UN VÉHICULE 100% ÉLECTRIQUE
        </Typography>
        <ListModel/>

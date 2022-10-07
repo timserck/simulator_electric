@@ -17,7 +17,7 @@ export const ListEconomy = () => {
     elec  : currentValues[3],
   }
 
-  console.log(slidesValues, "slidesValues")
+  //console.log(slidesValues, "slidesValues")
 
   const getCurrentModel = () => {
     return models.filter(model => model.name === currentModel)[0]

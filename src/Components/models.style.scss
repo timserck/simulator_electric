@@ -8,4 +8,15 @@
         padding-top: 17px;
         color: #787B80;
     }
+    &-stepper{
+        line-height:30px;
+        display: inline-block;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        color: white;
+        background: #00A3E0;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
 }

@@ -15,7 +15,7 @@ export const Details = () => {
   return (
     <>
       <Typography className="details-title" variant="h2" component={"h2"}>
-      CALCULEZ VOTRE CONSOMMATION
+       <span className='details-stepper'>2</span>CALCULEZ VOTRE CONSOMMATION
       </Typography>
       <form action="" className="details">
         {

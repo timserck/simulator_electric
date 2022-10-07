@@ -50,6 +50,8 @@ const theme = createTheme({
         },
         h5: {
 
+            fontFamily: "peugeot_newregular",
+            fontSize: 20,
         },
         h6: {
 

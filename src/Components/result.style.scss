@@ -10,7 +10,17 @@
     &-value {
         position: relative;
         font-size: 35px;
-        font-family: "peugeot_newbold",
+        line-height: 47px;
+        font-family: "peugeot_newbold";
+        border-bottom: 0.5px solid #FFFFFF;
+
+        // &::before{
+        //     content : "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0
+
+        // }
     }
     &-symbol {
         position: absolute;

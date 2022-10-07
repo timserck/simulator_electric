@@ -58,8 +58,8 @@ function App() {
             label: "Kilométrage annuel :",
             data:{
               unit: "Km",
-              defaultValue: 5000,
-              step: 3,
+              defaultValue: 15000,
+              step: 10,
               min : 5000,
               max : 50000,
               marks : [
@@ -85,11 +85,11 @@ function App() {
           {
             label: "Consommation de carburant :",
             data:{
-              unit: "Km",
-              defaultValue: 3,
-              step: 7,
-              min : 3,
-              max : 10,
+              unit: "l/100 km",
+              defaultValue: 5.5,
+              step: 10,
+              min: 3,
+              max: 10,
               marks : [
                 {
                   value: 3,
@@ -107,10 +107,10 @@ function App() {
             label: "Coût du carburant :",
             data:{
               unit: "€/l",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 3,
+              defaultValue: 1.8,
+              step: 10,
+              min: 1,
+              max: 3,
               marks : [
                 {
                   value: 1,
@@ -136,10 +136,10 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 4,
+              defaultValue: 1.5,
+              step: 10,
+              min: 1,
+              max: 4,
               marks : [
                 {
                   value: 1,
@@ -179,10 +179,10 @@ function App() {
             label: "Kilométrage annuel :",
             data:{
               unit: "Km",
-              defaultValue: 5000,
-              step: 3,
-              min : 5000,
-              max : 50000,
+              defaultValue: 15000,
+              step: 10,
+              min: 5000,
+              max: 50000,
               marks : [
                 {
                   value: 5000,
@@ -206,11 +206,11 @@ function App() {
           {
             label: "Consommation de carburant :",
             data:{
-              unit: "Km",
-              defaultValue: 3,
-              step: 3,
-              min : 3,
-              max : 10,
+              unit: "l/100 km",
+              defaultValue: 6.1,
+              step: 10,
+              min: 3,
+              max: 10,
               marks : [
                 {
                   value: 3,
@@ -228,10 +228,10 @@ function App() {
             label: "Coût du carburant :",
             data:{
               unit: "€/l",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 3,
+              defaultValue: 1.8,
+              step: 10,
+              min: 1,
+              max: 3,
               marks : [
                 {
                   value: 1,
@@ -257,10 +257,10 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 4,
+              defaultValue: 1.5,
+              step: 10,
+              min: 1,
+              max: 4,
               marks : [
                 {
                   value: 1,
@@ -300,10 +300,10 @@ function App() {
             label: "Kilométrage annuel :",
             data:{
               unit: "Km",
-              defaultValue: 5000,
-              step: 3,
-              min : 5000,
-              max : 50000,
+              defaultValue: 15000,
+              step: 10,
+              min: 5000,
+              max: 50000,
               marks : [
                 {
                   value: 5000,
@@ -327,11 +327,11 @@ function App() {
           {
             label: "Consommation de carburant :",
             data:{
-              unit: "Km",
-              defaultValue: 3,
-              step: 3,
-              min : 3,
-              max : 10,
+              unit: "l/100 km",
+              defaultValue: 6,
+              step: 10,
+              min: 3,
+              max: 10,
               marks : [
                 {
                   value: 3,
@@ -349,10 +349,10 @@ function App() {
             label: "Coût du carburant :",
             data:{
               unit: "€/l",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 3,
+              defaultValue: 1.8,
+              step: 10,
+              min: 1,
+              max: 3,
               marks : [
                 {
                   value: 1,
@@ -378,10 +378,10 @@ function App() {
             label: "Coût de l’électricité en kWh* :",
             data:{
               unit: "€/kWh",
-              defaultValue: 1,
-              step: 3,
-              min : 1,
-              max : 4,
+              defaultValue: 1.5,
+              step: 10,
+              min: 1,
+              max: 4,
               marks : [
                 {
                   value: 1,
@@ -405,19 +405,19 @@ function App() {
 results : [{
   value : 118,
   symbol: "€",
-  txt : "Sur 1 mois"
+  txt : "sur 1 mois"
 
 },
 {
   value : 118,
   symbol: "€",
-  txt : "Sur 1 an"
+  txt : "sur 1 an"
 
 },
 {
   value : 118,
   symbol: "€",
-  txt : "Sur 4 ans"
+  txt : "sur 4 ans"
 
 }],
 

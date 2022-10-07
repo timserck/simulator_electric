@@ -1,15 +1,20 @@
 .selected {
     &-img {
-        object-fit: cover;
-        width: 100%;
+        width: auto;
+        max-height: 401px;
     }
     &-details {
-        margin-top: 20px;
+
         display: flex;
-        gap: 20px;
+        border-top: 1px solid #ECECEF;
+        padding-top: 20px;
     }
-    &-name {}
+    &-name {
+        text-transform: lowercase!important;
+    }
     &-km {
         color: #787B80;
+        font-family: "";
+        text-transform: none!important;
     }
 }

@@ -25,10 +25,10 @@ const modelsContext = React.createContext({
                             label: "Kilométrage annuel :",
                             data: {
                                 unit: "Km",
-                                defaultValue: 5000,
+                                defaultValue: 15000,
                                 step: 10,
                                 min: 5000,
-                                max: 110,
+                                max: 50000,
                                 marks: [{
                                         value: 5000,
                                         label: '5 000 km',
@@ -49,8 +49,8 @@ const modelsContext = React.createContext({
                         sliders: [{
                                 label: "Consommation de carburant :",
                                 data: {
-                                    unit: "Km",
-                                    defaultValue: 3,
+                                    unit: "l/100 km",
+                                    defaultValue: 5.5,
                                     step: 10,
                                     min: 3,
                                     max: 10,
@@ -70,7 +70,7 @@ const modelsContext = React.createContext({
                                 label: "Coût du carburant :",
                                 data: {
                                     unit: "€/l",
-                                    defaultValue: 1,
+                                    defaultValue: 1.8,
                                     step: 10,
                                     min: 1,
                                     max: 3,
@@ -97,7 +97,7 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 1,
+                                defaultValue: 1.5,
                                 step: 10,
                                 min: 1,
                                 max: 4,
@@ -138,7 +138,7 @@ const modelsContext = React.createContext({
                             label: "Kilométrage annuel :",
                             data: {
                                 unit: "Km",
-                                defaultValue: 5000,
+                                defaultValue: 15000,
                                 step: 10,
                                 min: 5000,
                                 max: 50000,
@@ -162,8 +162,8 @@ const modelsContext = React.createContext({
                         sliders: [{
                                 label: "Consommation de carburant :",
                                 data: {
-                                    unit: "Km",
-                                    defaultValue: 3,
+                                    unit: "l/100 km",
+                                    defaultValue: 6.1,
                                     step: 10,
                                     min: 3,
                                     max: 10,
@@ -183,7 +183,7 @@ const modelsContext = React.createContext({
                                 label: "Coût du carburant :",
                                 data: {
                                     unit: "€/l",
-                                    defaultValue: 1,
+                                    defaultValue: 1.8,
                                     step: 10,
                                     min: 1,
                                     max: 3,
@@ -210,7 +210,7 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 1,
+                                defaultValue: 1.5,
                                 step: 10,
                                 min: 1,
                                 max: 4,
@@ -250,7 +250,7 @@ const modelsContext = React.createContext({
                             label: "Kilométrage annuel :",
                             data: {
                                 unit: "Km",
-                                defaultValue: 5000,
+                                defaultValue: 15000,
                                 step: 10,
                                 min: 5000,
                                 max: 50000,
@@ -274,8 +274,8 @@ const modelsContext = React.createContext({
                         sliders: [{
                                 label: "Consommation de carburant :",
                                 data: {
-                                    unit: "Km",
-                                    defaultValue: 3,
+                                    unit: "l/100 km",
+                                    defaultValue: 6,
                                     step: 10,
                                     min: 3,
                                     max: 10,
@@ -295,7 +295,7 @@ const modelsContext = React.createContext({
                                 label: "Coût du carburant :",
                                 data: {
                                     unit: "€/l",
-                                    defaultValue: 1,
+                                    defaultValue: 1.8,
                                     step: 10,
                                     min: 1,
                                     max: 3,
@@ -322,7 +322,7 @@ const modelsContext = React.createContext({
                             label: "Coût de l’électricité en kWh* :",
                             data: {
                                 unit: "€/kWh",
-                                defaultValue: 1,
+                                defaultValue: 1.5,
                                 step: 10,
                                 min: 1,
                                 max: 4,
@@ -347,19 +347,19 @@ const modelsContext = React.createContext({
         results: [{
                 value: 118,
                 symbol: "€",
-                txt: "Sur 1 mois"
+                txt: "sur 1 mois"
 
             },
             {
                 value: 118,
                 symbol: "€",
-                txt: "Sur 1 an"
+                txt: "sur 1 an"
 
             },
             {
                 value: 118,
                 symbol: "€",
-                txt: "Sur 4 ans"
+                txt: "sur 4 ans"
 
             }
         ],

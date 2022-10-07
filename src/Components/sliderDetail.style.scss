@@ -21,6 +21,12 @@
     }
     &-markLabel {
         top: 45px!important;
+        &[data-index="0"]{
+            transform: translate(0%, -50%)!important;
+        }
+        &[data-index="1"]{
+            transform: translate(-100%, -50%) !important;
+        }
     }
     &-track {
         border: none;
