@@ -50,7 +50,7 @@ function App() {
       ECO_1ans: 1.167,
       ECO_1mois: 97,
       
-      img: "/imgs/models/recadrer/e-208_2.jpg",
+      img: "imgs/models/recadrer/e-208_2.jpg",
        fieldsets : [{
         title: "aVOS DÉPLACEMENTS",
         sliders: [
@@ -171,7 +171,7 @@ function App() {
       ECO_1ans: 1.310,
       ECO_1mois: 109,
 
-      img: "/imgs/models/recadrer/e-2008_2.jpg",
+      img: "imgs/models/recadrer/e-2008_2.jpg",
       fieldsets : [{
         title: "bVOS DÉPLACEMENTS",
         sliders: [
@@ -292,7 +292,7 @@ function App() {
       ECO_1ans: 1.283,
       ECO_1mois: 107,
 
-      img: "/imgs/models/recadrer/e-308_2.jpg",
+      img: "imgs/models/recadrer/e-308_2.jpg",
       fieldsets : [{
         title: "cVOS DÉPLACEMENTS",
         sliders: [
