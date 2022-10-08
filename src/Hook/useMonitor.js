@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 const useMonitor = (startTime) => {
     const [timer, setTimer] = useState(startTime);
     useEffect(() => {
@@ -19,7 +19,9 @@ const useMonitor = (startTime) => {
             "mousedown",
             "click",
             "scroll",
-            "keypress"
+            "keypress",
+            "touchstart",
+            "touchmove",
         ];
         for (let i in events) {
             window.addEventListener(events[i], resetTimeout);
