@@ -3,13 +3,14 @@ import React, { useState, useContext, useEffect } from "react";
 import { Models, Details, Header } from "./Components";
 import { Grid } from '@mui/material';
 import ModelsContext from "./Auth/models-context";
-
+import useMonitor from "./Hook/useMonitor";
 function App() {
 
   const context = useContext(ModelsContext);
   const {models} = context;
   const [currentModel, setCurrentModel] = useState("e-208");
   const [currentValues, setCurrentValues] = useState(getDefaultValues);
+  const [isReset, setIsReset] = useState(false);
 
   function getDefaultValues() {
     return models
@@ -28,37 +29,32 @@ function App() {
     setCurrentValues(Array.from(value));
   };
 
- 
-  // useEffect(() => {
-  //   let timer;
-  //   window.addEventListener('mouseenter', e => {
-  //     clearTimeout(timer);
-    
-  //   });
-    
-  //   window.addEventListener('mouseleave', e => {
-  //     timer = setTimeout(() => console.log("reset"), 5000);
-  //   });
-  
+  const onReset = (value) => {
+    setIsReset(value)
+  };
 
-  //   return () => {
-  //     // window.removeEventListener("mouseenter", handleEnter);
-  //     // window.removeEventListener("mouseleave", handleLeave)
-  //   };
-  // }, []);
+
+  const timer = useMonitor(5);
+
+  useEffect(() => {
+    if(timer === 0){
+      onReset(true)
+      setCurrentValues(getDefaultValues());
+    }
+  }, [timer])
 
   return (
     <ModelsContext.Provider value={{ 
+      isReset: isReset,
       currentModel: currentModel, 
       onChangeModel: onChangeModel,  
-
       currentValues : currentValues,
       onChangeSlider: onChangeSlider,
+      onReset: onReset,
 
       models: [
         {
       name: "e-208",
-
       WLTP_Range : 400,
       UBE: 48.1,
       WLTP_consumption: 14.1,
@@ -92,11 +88,8 @@ function App() {
                 },
               ]
             }
-            
           },
         ],
-    
-    
       },
       {
         title: "COÛT DE VOTRE VÉHICULE ACTUEL",
@@ -120,7 +113,6 @@ function App() {
                 },
               ]
             }
-            
           },
           {
             label: "Coût du carburant :",
@@ -144,8 +136,6 @@ function App() {
            
           }
         ],
-    
-    
       },
       {
         title: "VOTRE CONTRAT ÉLECTRIQUE",
@@ -175,11 +165,9 @@ function App() {
         ],
       },
       ]
-
   },
   {
     name: "e-2008",
-
       WLTP_Range : 400,
       UBE: 51.0,
       WLTP_consumption: 15,
@@ -189,7 +177,6 @@ function App() {
       ECO_4ans: 5.130,
       ECO_1ans: 1.283,
       ECO_1mois: 107,
-
       img: "imgs/models/recadrer/e-2008_2.jpg",
       fieldsets : [{
         title: "VOS DÉPLACEMENTS",
@@ -216,8 +203,6 @@ function App() {
             
           },
         ],
-    
-    
       },
       {
         title: "COÛT DE VOTRE VÉHICULE ACTUEL",
@@ -241,7 +226,6 @@ function App() {
                 },
               ]
             }
-            
           },
           {
             label: "Coût du carburant :",
@@ -265,12 +249,9 @@ function App() {
            
           }
         ],
-    
-    
       },
       {
         title: "VOTRE CONTRAT ÉLECTRIQUE",
-    
         sliders: [
           {
             label: "Coût de l’électricité en kWh* :",
@@ -296,10 +277,8 @@ function App() {
         ],
       },
       ]
-
   },
   {
-
       name: "e-308",
       WLTP_Range : 400,
       UBE: 51.0,
@@ -310,7 +289,6 @@ function App() {
       ECO_4ans: 5.238,
       ECO_1ans: 1.310,
       ECO_1mois: 109,
-
       img: "imgs/models/recadrer/e-308_2.jpg",
       fieldsets : [{
         title: "VOS DÉPLACEMENTS",
@@ -334,11 +312,8 @@ function App() {
                 },
               ]
             }
-            
           },
         ],
-    
-    
       },
       {
         title: "COÛT DE VOTRE VÉHICULE ACTUEL",
@@ -362,7 +337,6 @@ function App() {
                 },
               ]
             }
-            
           },
           {
             label: "Coût du carburant :",
@@ -383,15 +357,11 @@ function App() {
                 },
               ]
             }
-           
           }
         ],
-    
-    
       },
       {
         title: "VOTRE CONTRAT ÉLECTRIQUE",
-    
         sliders: [
           {
             label: "Coût de l’électricité en kWh* :",
@@ -417,32 +387,24 @@ function App() {
         ],
       },
       ]
-
   },
-
-
 ].filter(model => model.name !== "e-308"),
 results : [{
   value : 118,
   symbol: "€",
   txt : "sur 1 mois"
-
 },
 {
   value : 118,
   symbol: "€",
   txt : "sur 1 an"
-
 },
 {
   value : 118,
   symbol: "€",
   txt : "sur 4 ans"
-
 }],
-
 }}>
-
       <main className="App container">
         <Header />
         <div className='l-main'>
@@ -453,10 +415,8 @@ results : [{
             <Grid item xs={6}>
               <Details />
             </Grid>
-
           </Grid>
         </div>
-
       </main>
     </ModelsContext.Provider>
   );

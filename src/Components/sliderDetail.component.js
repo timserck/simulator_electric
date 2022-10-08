@@ -1,22 +1,24 @@
 import React, { useContext, useEffect } from "react";
 import Slider from '@mui/material/Slider';
 import './sliderDetail.style.scss';
-
 import modelsContext from '../Auth/models-context';
 
 export const SliderDetail = (props) => {
   //console.log(props)
   const context = useContext(modelsContext)
-  const {currentValues, currentModel} = context;
+  const {currentValues, currentModel, isReset, onReset} = context;
   const { unit, marks, defaultValue, min, max, idFieldset, step } = props;
   const [value, setValue] = React.useState(defaultValue);
 
   useEffect(() => {
  setValue(defaultValue)
   }, [currentModel]);
- 
 
-
+  useEffect(() => {
+    setValue(defaultValue);
+    onReset(false)
+     }, [isReset]);
+    
   const handleChange = (event, newValue) => {
     setValue(newValue);
     let newValues = currentValues

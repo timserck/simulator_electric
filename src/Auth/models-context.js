@@ -6,6 +6,7 @@ import React from 'react';
 const modelsContext = React.createContext({
         currentModel: "e-208",
         currentValues: [0, 0, 0, 0],
+        isReset: false,
         models: [{
 
                 name: "e-208",
@@ -103,16 +104,15 @@ const modelsContext = React.createContext({
                                 step: 0.01,
                                 min: 0.1,
                                 max: 0.4,
-                                marks : [
-                                    {
-                                      value: 0.1,
-                                      label: '0.10 €/kWh',
+                                marks: [{
+                                        value: 0.1,
+                                        label: '0.10 €/kWh',
                                     },
                                     {
-                                      value: 0.4,
-                                      label: '0.40 €/kWh',
+                                        value: 0.4,
+                                        label: '0.40 €/kWh',
                                     },
-                                  ]
+                                ]
                             },
                             info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
                         }, ],
@@ -218,16 +218,15 @@ const modelsContext = React.createContext({
                                 step: 0.01,
                                 min: 0.1,
                                 max: 0.4,
-                                marks : [
-                                    {
-                                      value: 0.1,
-                                      label: '0.10 €/kWh',
+                                marks: [{
+                                        value: 0.1,
+                                        label: '0.10 €/kWh',
                                     },
                                     {
-                                      value: 0.4,
-                                      label: '0.40 €/kWh',
+                                        value: 0.4,
+                                        label: '0.40 €/kWh',
                                     },
-                                  ]
+                                ]
                             },
                             info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
                         }, ],
@@ -330,16 +329,15 @@ const modelsContext = React.createContext({
                                 step: 0.01,
                                 min: 0.1,
                                 max: 0.4,
-                                marks : [
-                                    {
-                                      value: 0.1,
-                                      label: '0.10 €/kWh',
+                                marks: [{
+                                        value: 0.1,
+                                        label: '0.10 €/kWh',
                                     },
                                     {
-                                      value: 0.4,
-                                      label: '0.40 €/kWh',
+                                        value: 0.4,
+                                        label: '0.40 €/kWh',
                                     },
-                                  ]
+                                ]
                             },
                             info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
                         }, ],
@@ -372,7 +370,8 @@ const modelsContext = React.createContext({
 
 
         onChangeSlider: () => {},
-        onChangeModel: () => {}
+        onChangeModel: () => {},
+        onReset: () => {}
     }
 
 
