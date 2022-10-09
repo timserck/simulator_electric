@@ -63,7 +63,7 @@
     },
     "build": {
         "appId": "com.electron.simulator_eletric",
-        "productName": "My Electron App",
+        "productName": "Simulator Electric",
         "files": ["build/**/*", "node_modules/**/*"],
         "directories": {
             "buildResources": "public"
