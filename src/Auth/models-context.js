@@ -97,7 +97,7 @@ const modelsContext = React.createContext({
                         title: "VOTRE CONTRAT ÉLECTRIQUE",
 
                         sliders: [{
-                            label: "Coût de l’électricité en kWh* :",
+                            label: "Coût de l’électricité en €/kWh* :",
                             data: {
                                 unit: "€/kWh",
                                 defaultValue: 0.15,
@@ -114,7 +114,7 @@ const modelsContext = React.createContext({
                                     },
                                 ]
                             },
-                            info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
+                            info: "*En moyenne le coût de l’électricité en France est de 0.15 €/kWh."
                         }, ],
                     },
                 ],
@@ -124,18 +124,21 @@ const modelsContext = React.createContext({
             },
             {
 
-                name: "e-2008",
+                name: "e-308",
+
+
+
                 WLTP_Range: 400,
                 UBE: 51.0,
                 WLTP_consumption: 15,
-                ICE_consumption: 6,
+                ICE_consumption: 6.1,
                 BEV_annualCost: 338,
-                ICE_annualCost: 1.620,
-                ECO_4ans: 5.130,
-                ECO_1ans: 1.283,
-                ECO_1mois: 107,
+                ICE_annualCost: 1.647,
+                ECO_4ans: 5.238,
+                ECO_1ans: 1.310,
+                ECO_1mois: 109,
 
-                img: "imgs/models/recadrer/e-2008_2.jpg",
+                img: "imgs/models/recadrer/e-308_2.jpg",
                 fieldsets: [{
                         title: "VOS DÉPLACEMENTS",
                         sliders: [{
@@ -211,7 +214,7 @@ const modelsContext = React.createContext({
                         title: "VOTRE CONTRAT ÉLECTRIQUE",
 
                         sliders: [{
-                            label: "Coût de l’électricité en kWh* :",
+                            label: "Coût de l’électricité en €/kWh* :",
                             data: {
                                 unit: "€/kWh",
                                 defaultValue: 0.15,
@@ -228,25 +231,25 @@ const modelsContext = React.createContext({
                                     },
                                 ]
                             },
-                            info: "*En moyenne le coût de l’électricité en France est de 0.15 kWh."
+                            info: "*En moyenne le coût de l’électricité en France est de 0.15 €/kWh."
                         }, ],
                     },
                 ]
 
             },
             {
-                name: "e-308",
+                name: "e-2008",
                 WLTP_Range: 400,
                 UBE: 51.0,
                 WLTP_consumption: 15,
-                ICE_consumption: 6.1,
+                ICE_consumption: 6,
                 BEV_annualCost: 338,
-                ICE_annualCost: 1.647,
-                ECO_4ans: 5.238,
-                ECO_1ans: 1.310,
-                ECO_1mois: 109,
+                ICE_annualCost: 1.620,
+                ECO_4ans: 5.130,
+                ECO_1ans: 1.283,
+                ECO_1mois: 107,
 
-                img: "imgs/models/recadrer/e-308_2.jpg",
+                img: "imgs/models/recadrer/e-2008_2.jpg",
                 fieldsets: [{
                         title: "VOS DÉPLACEMENTS",
                         sliders: [{
@@ -322,7 +325,7 @@ const modelsContext = React.createContext({
                         title: "VOTRE CONTRAT ÉLECTRIQUE",
 
                         sliders: [{
-                            label: "Coût de l’électricité en kWh* :",
+                            label: "Coût de l’électricité en €/kWh* :",
                             data: {
                                 unit: "€/kWh",
                                 defaultValue: 0.15,
@@ -339,7 +342,7 @@ const modelsContext = React.createContext({
                                     },
                                 ]
                             },
-                            info: "*En moyenne le coût de l’électricité en France est de 0,15 kWh."
+                            info: "*En moyenne le coût de l’électricité en France est de 0,15€ kWh."
                         }, ],
                     },
                 ]

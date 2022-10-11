@@ -8,7 +8,7 @@ const context = useContext(modelsContext)
     return (
         <ul className='listModel'>
             {
-                context.models.map(( model, index)=>{
+                context.models.filter(model => model.name !== "e-308").map(( model, index)=>{
                     return (
                         <li key={index} className={`listModel-li`}>
                         <ChooseModel {...model} />

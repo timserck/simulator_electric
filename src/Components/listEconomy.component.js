@@ -20,21 +20,21 @@ export const ListEconomy = () => {
   //console.log(slidesValues, "slidesValues")
 
   const getCurrentModel = () => {
-    return models.filter(model => model.name === currentModel)[0]
+    return models.filter(model => model.name !== "e-308").filter(model => model.name === currentModel)[0]
    }
 
-  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100)  * slidesValues.carbu) - ( slidesValues.km * getCurrentModel().WLTP_consumption / 100 * (slidesValues.elec / 10) )
+  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100)  * slidesValues.carbu) - ( slidesValues.km * (getCurrentModel().WLTP_consumption / 100) * slidesValues.elec )
 
   const setValue = (index) => {
 
     if(index === 0 ){
-      return Math.round(resultAnual / 12) < 0 ? 0 :  Math.round(resultAnual / 12)
+      return Math.floor(resultAnual / 12) < 0 ? 0 :  Math.floor(resultAnual / 12)
     }
     if(index === 1 ){
-      return  Math.round(resultAnual / 12) < 0 ? 0 :  Math.round(resultAnual)
+      return  Math.floor(resultAnual) < 0 ? 0 :  Math.floor(resultAnual)
     }
     if(index === 2 ){
-      return  Math.round(resultAnual / 12) < 0 ? 0 :  Math.round(resultAnual  * 4)
+      return  Math.floor(resultAnual * 4) < 0 ? 0 :  Math.round(resultAnual * 4)
     }
   
   }
