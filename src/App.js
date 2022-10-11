@@ -34,7 +34,7 @@ function App() {
   };
 
 
-  const timer = useMonitor(5);
+  const timer = useMonitor(30);
 
   useEffect(() => {
     if(timer === 0){
@@ -74,7 +74,7 @@ function App() {
             data:{
               unit: "Km",
               defaultValue: 15000,
-              step: 10,
+              step: 1000,
               min : 5000,
               max : 50000,
               marks : [
@@ -186,7 +186,7 @@ function App() {
             data:{
               unit: "Km",
               defaultValue: 15000,
-              step: 10,
+              step: 1000,
               min: 5000,
               max: 50000,
               marks : [
@@ -298,7 +298,7 @@ function App() {
             data:{
               unit: "Km",
               defaultValue: 15000,
-              step: 10,
+              step: 1000,
               min: 5000,
               max: 50000,
               marks : [
