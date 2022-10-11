@@ -23,18 +23,21 @@ export const ListEconomy = () => {
     return models.filter(model => model.name !== "e-308").filter(model => model.name === currentModel)[0]
    }
 
-  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100)  * slidesValues.carbu) - ( slidesValues.km * (getCurrentModel().WLTP_consumption / 100) * slidesValues.elec )
 
+   let WLTP_consumptionCalc = (getCurrentModel().UBE / getCurrentModel().WLTP_Range * 100 / .85)
+
+
+  let resultAnual =  (slidesValues.km * (slidesValues.conso / 100.0)  * slidesValues.carbu) - ( slidesValues.km * (WLTP_consumptionCalc / 100.0) * slidesValues.elec )
   const setValue = (index) => {
 
     if(index === 0 ){
-      return Math.floor(resultAnual / 12) < 0 ? 0 :  Math.floor(resultAnual / 12)
+      return Math.round(resultAnual / 12) < 0 ? 0 :  Math.round(resultAnual / 12)
     }
     if(index === 1 ){
-      return  Math.floor(resultAnual) < 0 ? 0 :  Math.floor(resultAnual)
+      return  Math.round(resultAnual) < 0 ? 0 :  Math.round(resultAnual)
     }
     if(index === 2 ){
-      return  Math.floor(resultAnual * 4) < 0 ? 0 :  Math.round(resultAnual * 4)
+      return  Math.round(resultAnual * 4) < 0 ? 0 :  Math.round(resultAnual * 4)
     }
   
   }
