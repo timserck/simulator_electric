@@ -24,7 +24,10 @@ export const ListEconomy = () => {
    }
 
 
-   let WLTP_consumptionCalc = (getCurrentModel().UBE / getCurrentModel().WLTP_Range * 100 / .85)
+  //  let WLTP_consumptionCalc = (getCurrentModel().UBE / getCurrentModel().WLTP_Range * 100 / .85)
+   let WLTP_consumptionCalc = getCurrentModel().WLTP_consumption;
+
+
 
 
   let resultAnual =  (slidesValues.km * (slidesValues.conso / 100.0)  * slidesValues.carbu) - ( slidesValues.km * (WLTP_consumptionCalc / 100.0) * slidesValues.elec )

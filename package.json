@@ -69,8 +69,9 @@
             "buildResources": "public"
         },
         "mac": {
-            "target": "dmg"
+            "target": "default"
         },
+        
         "win": {
             "target": "nsis"
         },
