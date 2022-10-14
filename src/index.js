@@ -5,6 +5,15 @@ import App from './App';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import reportWebVitals from './reportWebVitals';
 
+const breakpoints = {
+    values: {
+      xs: 0,
+      sm: 0, // Phone
+      md: 768, // Tablet/Laptop
+      lg: 1500, // Desktop
+      xl: 2000
+    }
+  };
 
 const theme = createTheme({
 
@@ -13,6 +22,7 @@ const theme = createTheme({
             main: "#4da3e0",
         },
     },
+    breakpoints,
     typography: {
         fontFamily: [
             'peugeot_newblack',
@@ -32,26 +42,41 @@ const theme = createTheme({
             fontFamily: "peugeot_newbold",
             fontSize: 34,
             textTransform: "uppercase",
-            fontWeight: "bold"
+            fontWeight: "bold",
+            [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+                fontSize: 20
+              }
         },
         h2: {
             fontFamily: "peugeot_newbold",
             fontSize: 20,
+            [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+                fontSize: 16
+              },
             textTransform: "uppercase",
             fontWeight: "bold"
         },
         h3: {
             fontFamily: "peugeot_newbold",
             fontSize: 16,
+            [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+                fontSize: 14
+              },
         },
         h4: {
             fontFamily: 'peugeot_newregular',
             fontSize: 14,
+            [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+                fontSize: 12
+              },
         },
         h5: {
 
             fontFamily: "peugeot_newregular",
             fontSize: 20,
+            [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+                fontSize: 14
+              },
         },
         h6: {
 

@@ -14,6 +14,10 @@
         font-family: "peugeot_newbold";
         border-bottom: 0.5px solid #FFFFFF;
 
+        @media screen and (max-width: 1500px) {
+            font-size: 25px;
+          }
+
         // &::before{
         //     content : "";
         //     position: absolute;
@@ -33,6 +37,9 @@
     &-info {
         margin-top: 20px;
         font-size: 16px;
-        font-family: 'peugeot_newregular'
+        font-family: 'peugeot_newregular';
+        @media screen and (min-width: 1500px) {
+            width: 1024px;
+          }
     }
 }
